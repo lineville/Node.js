@@ -2,6 +2,10 @@
   "name": "MyStaticServer",
   "version": "1.0",
   "dependencies": {
+    "chai": "^4.1.2",
     "express": "3.3.x"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.0"
   }
 }
