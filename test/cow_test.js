@@ -1,7 +1,6 @@
 //var expect = chai.expect;
 
 var assert = require('assert');
-var Cow = require('./cow.js');
 
 describe("Cow", function() {
   describe("constructor", function() {
@@ -26,6 +25,22 @@ describe("Cow", function() {
     it("should greet passed target", function() {
       var greetings = (new Cow("Liam")).greets("Linda");
       expect(greetings).to.equal("Liam greets Linda");
+    });
+  });
+
+  describe("#lateGreets", function() {
+    it("should pass an error if no target is passed", function(done){
+      (new Cow()).lateGreets(null, function(err, greetings) {
+        expect(err).to.be.an.instanceOf(Error);
+        done();
+      });
+    });
+
+    it("should greet passed target after one second", function(done) {
+      (new Cow("Liam")).lateGreets("Linda", function(err, greetings) {
+        expect(greetings).to.equal("Liam greets Linda");
+        done();
+      });
     });
   });
 });

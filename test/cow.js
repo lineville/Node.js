@@ -14,6 +14,16 @@
         throw new Error("missing target");
       }
       return this.name + " greets " + target;
+    },
+
+    lateGreets: function(target, cb) {
+      setTimeOut(function(self) {
+        try {
+          cb(null, self.greets(target));
+        } catch (err) {
+          cb(err);
+        }
+      }, 1000, this);
     }
   };
 
