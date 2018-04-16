@@ -1,6 +1,10 @@
 {
   "name": "MyStaticServer",
   "version": "1.0",
+  "description": "Node.js Walkthrough assignment-05",
+  "README": "README.md",
+  "license": "Liam Neville",
+  "repository": "https://github.com/vassar-cs/cmpu-375-assignment-05---lineville",
   "dependencies": {
     "chai": "^4.1.2",
     "express": "3.3.x"
