@@ -1,8 +1,8 @@
+
 //var expect = chai.expect;
-
-var assert = require('assert');
-
-describe("Cow", function() {
+var chai = require('chai');
+var expect = chai.expect();
+describe('Cow', function() {
   describe("constructor", function() {
     it("should have a default name", function(){
       var cow = new Cow();
