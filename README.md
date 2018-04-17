@@ -10,3 +10,6 @@ April 13 2018
 display on the html page. The article is 5 years out of date and it would not
 work the way that the article described. I was able to get mocha to display
 tests on the console but not on a browser.
+
+-- The end-to-end walkthrough are all found in the folder node-examples.
+
